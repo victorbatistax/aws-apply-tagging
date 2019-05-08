@@ -45,7 +45,7 @@ for idx in range(len(AllInstances)):
 
 MARCAS = ["Ambiente", "Projeto", "Pais", "Empresa"]
 
-response = client.describe_snapshots(OwnerIds=['604795975268'])
+response = client.describe_snapshots(OwnerIds=['idx_owner'])
 snapshot_list=response['Snapshots']
 
 # Get the markers of ec2 instances and replicate for all services attacheds
